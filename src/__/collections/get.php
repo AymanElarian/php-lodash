@@ -30,7 +30,7 @@ function get($collection = array(), $key = '', $default = null)
             if (!isset($collection->{$segment})) {
                 return $default instanceof \Closure ? $default() : $default;
             } else {
-                $collection = $collection->$segment;
+                $collection = $collection->{$segment};
             }
         } else {
             if (!isset($collection[$segment])) {
