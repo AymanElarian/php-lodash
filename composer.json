@@ -1,33 +1,33 @@
 {
-  "name"       : "tajawal/bottomline",
+  "name": "tajawal/lodash",
   "description": "A full-on PHP manipulation utility-belt that provides support for the usual functional.",
-  "keywords"   : [
+  "keywords": [
     "__",
     "bottomline",
     "library",
     "utility",
     "functions"
   ],
-  "type"       : "library",
-  "require"    : {
+  "type": "library",
+  "require": {
     "php": ">=5.4.0"
   },
-  "license"    : "MIT",
-  "authors"    : [
+  "license": "MIT",
+  "authors": [
     {
-      "name" : "Maciej A. Czyzewski",
+      "name": "Maciej A. Czyzewski",
       "email": "maciejanthonyczyzewski@gmail.com",
-      "role" : "author"
+      "role": "author"
     },
     {
-      "name" : "tajawal",
+      "name": "tajawal",
       "email": "it@tajawal.com",
-      "role" : "developer"
+      "role": "developer"
     }
   ],
-  "autoload"   : {
+  "autoload": {
     "files": [
-      "bottomline.php"
+      "lodash.php"
     ],
     "psr-4": {
       "__\\": "src/"
