@@ -11,7 +11,7 @@ namespace collections;
  * @return array|object
  *
  */
-function pluck($collection = array(), $property = '')
+function pluck($collection = [], $property = '')
 {
     $plucked = \array_map(
       function ($value) use ($property) {

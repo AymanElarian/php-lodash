@@ -11,12 +11,12 @@ namespace collections;
  * @return array
  *
  */
-function filter(array $array = array(), \Closure $closure)
+function filter(array $array = [], \Closure $closure)
 {
     if (!$closure) {
         return \arrays\compact($array);
     } else {
-        $result = array();
+        $result = [];
 
         foreach ($array as $key => $value) {
             if (\call_user_func($closure, $value)) {
