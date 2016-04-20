@@ -15,7 +15,7 @@ namespace collections;
  * @return array|mixed|null
  *
  */
-function get($collection = array(), $key = '', $default = null)
+function get($collection = [], $key = '', $default = null)
 {
     if (\objects\isNull($key)) {
         return $collection;
