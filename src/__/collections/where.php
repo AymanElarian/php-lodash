@@ -8,13 +8,14 @@ namespace collections;
  **_::where($a, ['age' => 16]);
  ** // >> [['name' => 'maciej', 'age' => 16]]
  *
- * @param array $array array of values
- * @param array $key   condition in format of ['KEY'=>'VALUE']
+ * @param array $array    array of values
+ * @param array $key      condition in format of ['KEY'=>'VALUE']
+ * @param bool  $keepKeys keep original keys
  *
  * @return array
  *
  */
-function where(array $array = [], array $key = [])
+function where(array $array = [], array $key = [], $keepKeys = false)
 {
     $result = [];
 
@@ -36,7 +37,11 @@ function where(array $array = [], array $key = [])
         }
 
         if ($not == false) {
-            $result[] = $v;
+            if ($keepKeys) {
+                $result[$k] = $v;
+            } else {
+                $result[] = $v;
+            }
         }
     }
 
