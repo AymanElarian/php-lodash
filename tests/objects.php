@@ -19,7 +19,9 @@ class ObjectsTest extends PHPUnit_Framework_TestCase
     public function testIsFunction()
     {
         // Arrange
-        $a = function ($a) { return $a + 2; };
+        $a = function ($a) {
+            return $a + 2;
+        };
 
         // Act
         $x = __::isFunction($a);

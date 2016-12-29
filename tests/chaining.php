@@ -4,7 +4,8 @@ class ChainingTest extends PHPUnit_Framework_TestCase
 {
     // ...
 
-    public function testTODO() {
+    public function testTODO()
+    {
         // Arrange
         $a = 'testing';
 

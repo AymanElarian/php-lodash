@@ -8,9 +8,9 @@ namespace collections;
  ** __::get(['foo' => ['bar' => 'ter']], 'foo.bar');
  ** // → 'ter'
  *
- * @param array  $collection  array of values
- * @param string $key   key or index
- * @param null   $default default value to return if index not exist
+ * @param array  $collection array of values
+ * @param string $key        key or index
+ * @param null   $default    default value to return if index not exist
  *
  * @return array|mixed|null
  *

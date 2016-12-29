@@ -1,11 +1,11 @@
 <div align="center">
-  <img alt="Bottomline logo" src="https://raw.githubusercontent.com/MaciejCzyzewski/bottomline/master/screenshot-1.png">
+  <img alt="lodash-php logo" src="https://raw.githubusercontent.com/tajawal/lodash-php/master/screenshot-1.png">
 </div>
 
 
-# bottomline
-[![Build Status](https://travis-ci.org/maciejczyzewski/bottomline.png)](https://travis-ci.org/maciejczyzewski/bottomline)
-[![PHP version](https://badge.fury.io/ph/maciejczyzewski%2Fbottomline.svg)](http://badge.fury.io/ph/maciejczyzewski%2Fbottomline)
+# lodash-php
+[![Build Status](https://travis-ci.org/tajawal/lodash-php.png)](https://travis-ci.org/tajawal/lodash-php)
+[![PHP version](https://badge.fury.io/ph/tajawal%2Flodash-php.svg)](http://badge.fury.io/ph/tajawal%2Flodash-php)
 
 
 ## Table of Contents:
@@ -26,18 +26,18 @@ extension=php_mbstring.dll
 
 ## Introduction
 
-bottomline is a PHP utility library, similar to Underscore/Lodash, that utilizes `namespace`s and dynamic auto loading to improve library performance.
+lodash-php is a PHP utility library, similar to Underscore/Lodash, that utilizes `namespace`s and dynamic auto loading to improve library performance.
 
 
 ### Project Structure
 
-- `bottomline.php` is the entry point for the bottomline utility library
-- All bottomline methods are stored in separate files within their respective `namespace` folder outlined in `/src/__`
+- `lodash.php` is the entry point for the lodash-php utility library
+- All lodash-php methods are stored in separate files within their respective `namespace` folder outlined in `/src/__`
 - Tests reflect the `namespace` defined within the library and are processed using [phpunit testing](https://phpunit.de)
-    + To test bottomline, [install phpunit](https://phpunit.de/getting-started.html) and in the terminal, run `phpunit`
+    + To test lodash-php, [install phpunit](https://phpunit.de/getting-started.html) and in the terminal, run `phpunit`
 
 ```bash
-/bottomline
+/lodash-php
 ├── /images
 │   └── (place relevant graphics in this folder)
 ├── /src
@@ -47,7 +47,7 @@ bottomline is a PHP utility library, similar to Underscore/Lodash, that utilizes
 │       ├── /functions
 │       ├── /objects
 │       ├── /utilities
-│       └── load.php        # (autoloader script for all bottomline methods)
+│       └── load.php        # (autoloader script for all lodash-php methods)
 ├── /tests
 │   ├── arrays.php
 │   ├── chaining.php
@@ -57,7 +57,7 @@ bottomline is a PHP utility library, similar to Underscore/Lodash, that utilizes
 │   └── utilities.php
 ├── .gitignore
 ├── .travis.yaml
-├── bottomline.php
+├── lodash.php
 ├── composer.json
 ├── phpunit.xml
 ├── LICENSE
@@ -66,25 +66,25 @@ bottomline is a PHP utility library, similar to Underscore/Lodash, that utilizes
 
 ---
 
-**NOTE:** bottomline is not currently in feature parity with Underscore/Lodash. Review the [contributing](#contributing) section for more information.
+**NOTE:** lodash-php is not currently in feature parity with Underscore/Lodash. Review the [contributing](#contributing) section for more information.
 
 ---
 
 ### Benchmarks
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/MaciejCzyzewski/bottomline/master/screenshot-2.png"/>
+  <img src="https://raw.githubusercontent.com/tajawal/lodash-php/master/screenshot-2.png"/>
 </div>
 
 
 ## Installation
 
-Install bottomline as described in the methods below:
+Install lodash-php as described in the methods below:
 
 
 ### via Composer and packagist
 
-[Packagist repo](https://packagist.org/packages/maciejczyzewski/bottomline)
+[Packagist repo](https://packagist.org/packages/tajawal/lodash-php)
 
 Put the require statement in your `composer.json` file and run `composer install`:
 
@@ -92,7 +92,7 @@ Put the require statement in your `composer.json` file and run `composer install
 {
     "require": {
         ...
-        "maciejczyzewski/bottomline": "*"
+        "tajawal/lodash-php": "*"
         ...
     }
 }
@@ -104,7 +104,7 @@ Put the require statement in your `composer.json` file and run `composer install
 Put the require statement in your code:
 
 ```php
-require 'bottomline/bottomline.php';
+require 'lodash-php/lodash.php';
 ```
 
 
@@ -356,10 +356,4 @@ Please feel free to contribute to this project! Pull requests and feature reques
 
 
 ## License
-
-See LICENSE file in this repository.
-
-
-## Thanks
-
-* Brandtley McMinn ([@bmcminn](https://github.com/bmcminn))
+MIT

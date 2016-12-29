@@ -9,15 +9,15 @@ class CollectionsTest extends PHPUnit_Framework_TestCase
         // Arrange
         $a = [1, 2, 3, 4, 5];
         $b = [
-            ['name' => 'fred',   'age' => 32],
-            ['name' => 'maciej', 'age' => 16]
+            ['name' => 'fred', 'age' => 32],
+            ['name' => 'maciej', 'age' => 16],
         ];
 
         // Act
-        $x = __::filter($a, function($n) {
+        $x = __::filter($a, function ($n) {
             return $n > 3;
         });
-        $y = __::filter($b, function($n) {
+        $y = __::filter($b, function ($n) {
             return $n['age'] == 16;
         });
 
@@ -68,7 +68,7 @@ class CollectionsTest extends PHPUnit_Framework_TestCase
         $a = [1, 2, 3];
 
         // Act
-        $x = __::map($a, function($n) {
+        $x = __::map($a, function ($n) {
             return $n * 3;
         });
 
@@ -105,7 +105,7 @@ class CollectionsTest extends PHPUnit_Framework_TestCase
     {
         // Arrange
         $a = [
-            ['foo' => 'bar',  'bis' => 'ter' ],
+            ['foo' => 'bar', 'bis' => 'ter'],
             ['foo' => 'bar2', 'bis' => 'ter2'],
         ];
 
@@ -120,8 +120,8 @@ class CollectionsTest extends PHPUnit_Framework_TestCase
     {
         // Arrange
         $a = [
-            ['name' => 'fred',   'age' => 32],
-            ['name' => 'maciej', 'age' => 16]
+            ['name' => 'fred', 'age' => 32],
+            ['name' => 'maciej', 'age' => 16],
         ];
 
         // Act

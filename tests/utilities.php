@@ -1,8 +1,10 @@
 <?php
 
-class UtilitiesTest extends PHPUnit_Framework_TestCase {
+class UtilitiesTest extends PHPUnit_Framework_TestCase
+{
 
-    public function testIsEmail() {
+    public function testIsEmail()
+    {
         // Arrange
         $a  = 'test@test.com';
         $a2 = 'test_test.com';
@@ -16,7 +18,8 @@ class UtilitiesTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(false, $x2);
     }
 
-    public function testNow() {
+    public function testNow()
+    {
         // Act
         $x = __::now();
 
@@ -24,7 +27,8 @@ class UtilitiesTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(true, is_numeric($x));
     }
 
-    public function testStringContains() {
+    public function testStringContains()
+    {
         // Arrange
         $a  = 'testi';
         $a2 = 'waffle';
@@ -39,7 +43,8 @@ class UtilitiesTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(true, $x2);
     }
 
-    public function testStringContainsWithOffset() {
+    public function testStringContainsWithOffset()
+    {
         // Arrange
         $a  = 'testi';
         $a2 = 'waffle';

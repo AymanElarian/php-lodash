@@ -3,7 +3,7 @@
 namespace __;
 
 /*                                                 *\
- *                   bottomline                    *
+ *                   lodash-php                    *
  *                                                 *
  ___________________________________________________
  ***************************************************
@@ -14,15 +14,10 @@ namespace __;
  ** Functions                                    [0]
  ** Objects                                      [7]
  ** Utilities                                    [0]
-
- ***************************************************
- * bottomline v0.0.5                               *
- * bottomline is licensed under the MIT license    *
- * Copyright (c) 2014 Maciej A. Czyzewski          *
 \***************************************************/
 
 if (version_compare(PHP_VERSION, '5.4.0', '=<')) {
-    throw new \Exception('Your PHP installation is too old. Bottomline requires at least PHP 5.4.0', 1);
+    throw new \Exception('Your PHP installation is too old. lodash-php requires at least PHP 5.4.0', 1);
 }
 
 /**
@@ -99,7 +94,7 @@ class __
 
                     if (!function_exists($alias)) {
                         self::$functions[] = $alias;
-                        require $function;
+                        require_once $function;
                     }
                 }
             }

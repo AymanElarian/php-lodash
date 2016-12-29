@@ -18,7 +18,7 @@ namespace arrays;
 function patch($arr, $patches, $parent = '')
 {
     foreach ($arr as $key => $value) {
-        $z = $parent.'/'.$key;
+        $z = $parent . '/' . $key;
 
         if (isset($patches[$z])) {
             $arr[$key] = $patches[$z];

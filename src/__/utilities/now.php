@@ -11,5 +11,6 @@ namespace utilities;
 function now()
 {
     $now = time();
+
     return $now;
 }
