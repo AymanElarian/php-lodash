@@ -25,9 +25,6 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "autoload": {
-    "files": [
-      "lodash.php"
-    ],
     "psr-4": {
       "__\\": "src/"
     }
