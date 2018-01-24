@@ -1,6 +1,6 @@
 <?php
 
-class ChainingTest extends PHPUnit_Framework_TestCase
+class ChainingTest extends \PHPUnit\Framework\TestCase
 {
     // ...
 
